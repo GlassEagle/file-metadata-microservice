@@ -5,6 +5,7 @@ var mongoose = require("mongoose");
 var multer = require("multer");
 var filemetadataHandler = require("./controllers/filemetadataHandler.server.js");
 
+var upload = multer();
 var app = express();
 mongoose.Promise = global.Promise;
 
