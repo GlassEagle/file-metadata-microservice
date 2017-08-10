@@ -1,6 +1,6 @@
 "use strict";
 
-function filemetadataHandler(req, res){
+function getfilesizeHandler(req, res){
     if(!req.file){
         res.status(400);
         res.send("ERROR: no file uploaded");
@@ -12,4 +12,4 @@ function filemetadataHandler(req, res){
     res.send(data);
 }
 
-module.exports = filemetadataHandler;
+module.exports = getfilesizeHandler;
