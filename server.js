@@ -2,6 +2,7 @@
 
 var express = require("express");
 var mongoose = require("mongoose");
+var multer = require("multer");
 var filemetadataHandler = require("./controllers/filemetadataHandler.server.js");
 
 var app = express();
