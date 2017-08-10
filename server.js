@@ -15,7 +15,7 @@ app.get("/", function(req, res){
     res.sendFile( process.cwd() + "/public/index.html");
 });
 
-app.post("/api/filemetadata", filemetadataHandler);
+app.post("/api/filemetadata", upload.single("file"), filemetadataHandler);
 
 app.listen(process.env.PORT, function () {
   console.log('App listening on port %s!', process.env.PORT);
